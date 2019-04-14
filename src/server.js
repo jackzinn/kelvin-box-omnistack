@@ -45,4 +45,4 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'temp')));
 // apontados que vamos usar as rotas
 app.use(require('./routes'));
 // porta
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
